@@ -1,6 +1,7 @@
 import RobotProfileImage from '../assets/robot.png'
 import UserProfileImage from '../assets/my-profile-image.jpg'
 import './styles/ChatMessage.css'
+import 'dayjs'
 
 
 //ye wo component h jb user koi message kre ga or jo us ko receive ho ga.
@@ -31,6 +32,7 @@ export function ChatMessage({ message, sender }) {
         );
     }
     */
+
 
     return (
         <div className={sender === 'user'
