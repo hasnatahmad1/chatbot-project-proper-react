@@ -2,6 +2,7 @@ import RobotProfileImage from '../assets/robot.png'
 import UserProfileImage from '../assets/my-profile-image.jpg'
 import './styles/ChatMessage.css'
 import 'dayjs'
+import dayjs from 'dayjs'
 
 
 //ye wo component h jb user koi message kre ga or jo us ko receive ho ga.
@@ -33,6 +34,10 @@ export function ChatMessage({ message, sender }) {
     }
     */
 
+    const currentTimeInMiliseconds = dayjs().valueOf();
+
+    //console.log(dayjs(currentTimeInMiliseconds).format('h:mma'));
+
 
     return (
         <div className={sender === 'user'
@@ -44,6 +49,9 @@ export function ChatMessage({ message, sender }) {
             )}
             <div className="chat-message-text">
                 {message}
+                <p
+                    className='current-time'
+                >{dayjs(currentTimeInMiliseconds).format('h:mma')}</p>
             </div>
             {sender === 'user' && (
                 <img src={UserProfileImage} className="chat-message-profile" />
