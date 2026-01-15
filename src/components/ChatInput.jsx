@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LoadingSpinnerImage from '../assets/loading-spinner.gif'
 import { Chatbot } from 'supersimpledev'
-import './ChatInput.css'
+import './styles/ChatInput.css'
 
 
 

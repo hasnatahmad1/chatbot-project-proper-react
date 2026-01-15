@@ -1,6 +1,6 @@
 import RobotProfileImage from '../assets/robot.png'
 import UserProfileImage from '../assets/user.png'
-import './ChatMessage.css'
+import './styles/ChatMessage.css'
 
 
 //ye wo component h jb user koi message kre ga or jo us ko receive ho ga.
