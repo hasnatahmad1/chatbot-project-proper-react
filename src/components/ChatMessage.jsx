@@ -1,5 +1,5 @@
 import RobotProfileImage from '../assets/robot.png'
-import UserProfileImage from '../assets/user.png'
+import UserProfileImage from '../assets/my-profile-image.jpg'
 import './styles/ChatMessage.css'
 
 
