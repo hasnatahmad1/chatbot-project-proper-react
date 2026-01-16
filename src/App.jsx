@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ChatInput } from './components/ChatInput'
 import { ChatMessages } from './components/ChatMessages'
+import { Chatbot } from 'supersimpledev'
 import './App.css'
 
 
@@ -20,6 +21,13 @@ function App() {
   console.log(checkLocalStorage());
 
   const [chatMessages, setChatMessages] = useState(checkLocalStorage());
+
+  useEffect(() => {
+    Chatbot.addResponses({
+      'Addition': '2+5=7',
+    });
+  }, []);
+
 
   //const [chatMessages, setChatMessages] = array;
 
